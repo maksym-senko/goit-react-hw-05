@@ -1,0 +1,60 @@
+h1 {
+    margin-bottom: 10px;
+}
+  
+p {
+    line-height: 1.6;
+}
+  
+ul {
+    margin-top: 20px;
+}
+  
+li {
+    margin: 5px 0;
+}
+  
+a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.detailsContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.detailsItem {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.poster {
+    padding: 20px 50px;
+    width: 250px;
+}
+
+.detailsText {
+    max-width: 500px;
+    text-align: justify;
+}
+
+.detailsLink {
+    display: flex;
+    gap: 30px;
+    color: #2e859e;
+    font-size: 18px;
+    margin-top: -20px;
+    padding-left: 50px;
+}
+    
+.detailsLink:hover,
+.detailsLink:focus {
+    color: #f8f8f8;
+}
+
+.btnBack {
+    position: absolute;
+    margin-left: -10px;
+}

@@ -1,0 +1,30 @@
+h1 {
+    margin: 20px 0 40px 0;
+    text-align: center;
+    font-size: 40px;
+}
+  
+ul {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+}
+  
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+  
+li:last-child {
+    border-bottom: none;
+}
+
+button {
+    border-radius: 5px;
+    position: absolute;
+    top: 90px;
+    right: 30px;
+
+}
+  

@@ -1,0 +1,31 @@
+nav {
+  margin: 0 auto;
+  max-width: 1010px;
+  padding: 5px;
+  font-size: 22px;
+  background-color: #393a3f;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+
+}
+  
+.navLink {
+  color: #2e859e;
+  font-size: 18px;
+  margin: 15px 0;
+}
+  
+.navLink:active {
+  font-weight: bold;
+  border-bottom: 2px solid #2e859e;
+}
+  
+.navLink:hover,
+.navLink:focus {
+  color: #f8f8f8;
+  border-bottom: 2px solid #2e859e; 
+}
+  

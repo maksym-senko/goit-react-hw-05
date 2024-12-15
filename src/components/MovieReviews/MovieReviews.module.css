@@ -1,0 +1,23 @@
+.reviewsList {
+    list-style: none;
+    padding: 0;
+    background-color: #393a3f;
+    border: none;
+    padding: 20px;
+    text-align: justify;
+}
+  
+.reviewsItem {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.reviewsTextContent {
+    margin: 5px 0;
+}
+
+.reviewsTextAuthor {
+    margin-top: 20px;
+}
+  

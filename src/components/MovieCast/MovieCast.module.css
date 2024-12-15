@@ -1,0 +1,53 @@
+.castContainer {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.errorMessage {
+  color: #d9534f;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.castList {
+    background-color: #393a3f;
+    border: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.castList:last-child {
+    justify-content: center;
+}
+
+.castItem {
+  text-align: center;
+  width: 150px;
+  border-bottom: none;
+}
+
+.actorImage {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.actor-name {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
