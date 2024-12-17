@@ -13,6 +13,8 @@
     border: none;
     margin: 0 auto;
     margin-bottom: 80px;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .movieList:last-child {
@@ -20,6 +22,7 @@
 }
   
 .movieItem {
+    padding: 10px;
     width: 180px;
     text-align: center;
     border: none;
@@ -45,5 +48,3 @@
     font-size: 16px;
     font-weight: 600;
 }
-
-  

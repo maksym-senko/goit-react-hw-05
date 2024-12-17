@@ -35,7 +35,7 @@ const MovieDetailsPage = () => {
   return (
     <div className={style.detailsContainer}>
       <button className={style.btnBack} onClick={handleGoBack}>Go back</button>
-      <h1>{movie.title}</h1>
+      <h1 className={style.titleDetailPage}>{movie.title}</h1>
       <div className={style.detailsItem}>
         <img className={style.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
         <p className={style.detailsText}>{movie.overview}</p>

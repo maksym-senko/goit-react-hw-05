@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import MovieList from '../../components/MovieList/MovieList';
-import './HomePage.module.css';
+import style from './HomePage.module.css';
 
 
 const HomePage = () => {
@@ -19,7 +19,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>Trending Movies</h1>
+      <h1 className={style.titleHomePage}>Trending Movies</h1>
       <MovieList movies={movies} />
     </div>
   );
