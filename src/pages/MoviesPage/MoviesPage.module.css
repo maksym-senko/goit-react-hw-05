@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 .formContainer {
     display: flex;
     justify-content: center;
@@ -9,12 +13,18 @@
     width: 400px;
     padding: 15px;
     font-size: 16px;
+    margin-bottom: 40px;
 }
 
 .btnSearch {
     width: 100px;
     height: 50px;
     border-radius: 5px;
-    position: none;
+    text-align: center;
+    top: 180px;
+    right: 350px;
+}
+
+.moviesPageText {
     text-align: center;
 }

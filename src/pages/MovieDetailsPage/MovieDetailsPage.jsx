@@ -1,7 +1,6 @@
-import React, { useEffect, useState, Suspense } from 'react';
-import { useParams, useLocation, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState, Suspense, useRef } from 'react';
+import { useParams, useNavigate, useLocation, Routes, Route, Link } from "react-router-dom";
 import axios from 'axios';
-import { Routes, Route, Link } from 'react-router-dom';
 import style from './MovieDetailPage.module.css';
 
 
@@ -15,6 +14,8 @@ const MovieDetailsPage = () => {
   const navigate = useNavigate();
   const [movie, setMovie] = useState(null);
 
+  const from = useRef(location.state?.from || "/movies");
+
   useEffect(() => {
     axios
       .get(`https://api.themoviedb.org/3/movie/${movieId}`, {
@@ -25,7 +26,7 @@ const MovieDetailsPage = () => {
   }, [movieId]);
 
   const handleGoBack = () => {
-    navigate(location.state?.from || '/movies');
+    navigate(from.current);
   };
 
   if (!movie) return <p>Loading...</p>;
@@ -39,15 +40,19 @@ const MovieDetailsPage = () => {
         <img className={style.poster} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
         <p className={style.detailsText}>{movie.overview}</p>
       </div>
-      <div className={style.detailsLink}>
-        <Link to="cast" state={{ from: location.state?.from }}>Cast</Link> {' '}
-        <Link to="reviews" state={{ from: location.state?.from }}>Reviews</Link>
-      </div>
+      <nav className={style.detailsLink}>
+        <Link to={`/movies/${movieId}/cast`} state={{ from: from.current }}>
+          Cast
+        </Link>{' '}
+        <Link to={`/movies/${movieId}/reviews`} state={{ from: from.current }}>
+          Reviews
+        </Link>
+      </nav>
 
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
-          <Route path="cast" element={<MovieCast />} />
-          <Route path="reviews" element={<MovieReviews />} />
+          <Route path="/cast" element={<MovieCast />} />
+          <Route path="/reviews" element={<MovieReviews />} />
         </Routes>
       </Suspense>
     </div>

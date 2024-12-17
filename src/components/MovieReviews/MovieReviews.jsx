@@ -27,9 +27,9 @@ const MovieReviews = () => {
 
   return (
     <div>
-      <h2>Reviews</h2>
       {error && <p className="error-message">{error}</p>}
       <ul className={style.reviewsList}>
+      <h2>Reviews</h2>
         {reviews.length > 0 ? (
           reviews.map((review) => (
             <li className={style.reviewsItem} key={review.id}>

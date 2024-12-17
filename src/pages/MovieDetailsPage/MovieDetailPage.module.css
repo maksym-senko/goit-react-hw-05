@@ -16,7 +16,6 @@ li {
   
 a {
     display: inline-block;
-    margin-top: 20px;
 }
 
 .detailsContainer {
@@ -33,6 +32,10 @@ a {
 .poster {
     padding: 20px 50px;
     width: 250px;
+    height: 350px;
+    margin-bottom: 40px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .detailsText {
@@ -42,11 +45,12 @@ a {
 
 .detailsLink {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     color: #2e859e;
     font-size: 18px;
-    margin-top: -20px;
-    padding-left: 50px;
+    padding: 20px;
 }
     
 .detailsLink:hover,
