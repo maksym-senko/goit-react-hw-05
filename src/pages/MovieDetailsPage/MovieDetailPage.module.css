@@ -17,9 +17,10 @@ a {
 }
 
 .detailsContainer {
-    max-width: 1000px;
+    max-width: 1020px;
     margin: 0 auto;
     margin-bottom: 60px;
+
 }
 
 .detailsItem {
@@ -57,11 +58,9 @@ a {
 }
 
 .btnBack {
+    margin-top: 20px;
+    margin-left: 920px;
     border-radius: 5px;
-    position: absolute;
-    top: 90px;
-    right: 165px;
-    margin-left: -10px;
 }
 
 .titleDetailPage {
